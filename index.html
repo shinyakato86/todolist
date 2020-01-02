@@ -1,0 +1,27 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container text-center">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4 bg-primary">Todo List</h1>
+        </header>
+        <form class="add text-center my-4">
+            <label>タスクの名前</label>
+            <input type="text" id="inputTask" class="form-control m-auto w-75" name="name" placeholder="入力してください">
+        </form>
+        <p id="error" class="text-danger"></p>
+        <button id="addBtn" class="btn btn-primary mt-1">追加</button>
+        <ul id="taskList" class="list-group list-unstyled w-100 mt-4 text-left">
+            <!-- リスト追加-->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
